@@ -13,16 +13,16 @@ module.exports = function(grunt) {
       },
       website: {
         files: {
-          'public/css/danpaquette.min.css' : 'src/scss/init.scss'
+          'resources/css/danpaquette.min.css' : 'resources/src/scss/init.scss'
         }
       }
     },
     clean: {
       css: [
-        'public/css'
+        'resources/css'
       ],
       js: [
-        'public/js'
+        'resources/js'
       ]
     },
     uglify: {
@@ -35,18 +35,20 @@ module.exports = function(grunt) {
       },
       js: {
         files: {
-          'public/js/danpaquette.min.js': [
-            'src/lib/jquery/jquery-2.1.4.min.js',
-            'src/js/**/*.js'
+          'resources/js/danpaquette.min.js': [
+            'resources/src/lib/jquery/jquery-2.1.4.min.js',
+            'resources/src/js/**/*.js'
           ]
         }
       }
     },
     jshint: {
-      all: ['src/js/**/*.js']
+      all: ['resources/src/js/**/*.js']
     }
   });
-  grunt.registerTask('default',['jshint']);
+
   grunt.registerTask('build-css', ['clean:css','sass:website']);
-  grunt.registerTask('build-javascript', ['clean:js', 'uglify:js']);
+  grunt.registerTask('build-js', ['jshint','clean:js', 'uglify:js']);
+
+  grunt.registerTask('travis', ['build-css', 'build-js']);
 };

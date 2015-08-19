@@ -2,7 +2,7 @@
 	"version": 3,
 	"file": "danpaquette.min.css",
 	"sources": [
-		"../../src/scss/init.scss"
+		"../src/scss/init.scss"
 	],
 	"sourcesContent": [],
 	"mappings": "",
