@@ -3,6 +3,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   grunt.initConfig({
     sass: {
@@ -40,9 +41,12 @@ module.exports = function(grunt) {
           ]
         }
       }
+    },
+    jshint: {
+      all: ['src/js/**/*.js']
     }
   });
-
+  grunt.registerTask('default',['jshint']);
   grunt.registerTask('build-css', ['clean:css','sass:website']);
   grunt.registerTask('build-javascript', ['clean:js', 'uglify:js']);
 };
