@@ -1,0 +1,32 @@
+{
+  "name": "dan-paquettes-portfolio",
+  "description": "My public portfolio.",
+  "main": "public/index.html",
+  "authors": [
+    "Dan Paquette"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "portfolio",
+    "designer",
+    "user",
+    "experience",
+    "web",
+    "design",
+    "web",
+    "development",
+    "graphic",
+    "design",
+    "logo",
+    "design",
+    "branding",
+    "user",
+    "interface"
+  ],
+  "homepage": "https://github.com/danpaquette/Portfolio",
+  "moduleType": [],
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
