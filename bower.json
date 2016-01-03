@@ -1,32 +1,23 @@
 {
-  "name": "dan-paquettes-portfolio",
-  "description": "My public portfolio.",
-  "main": "public/index.html",
+  "name": "danpaquette.github.io",
+  "dependencies": {
+    "lwm-css-boilerplate": "~0.0.1"
+  },
+  "homepage": "https://github.com/danpaquette/danpaquette.github.io",
   "authors": [
-    "Dan Paquette"
+    "Dan Paquette <dm.paquette@gmail.com>"
   ],
-  "license": "UNLICENSED",
+  "description": "Public portfolio for Dan Paquette.",
+  "main": "gruntfile.js",
+  "moduleType": [],
   "keywords": [
     "portfolio",
-    "designer",
-    "user",
-    "experience",
-    "web",
+    "personal",
+    "ux",
     "design",
     "web",
-    "development",
-    "graphic",
-    "design",
-    "logo",
-    "design",
-    "branding",
-    "user",
-    "interface"
+    "development"
   ],
-  "homepage": "https://github.com/danpaquette/Portfolio",
-  "moduleType": [],
-  "private": true,
-  "dependencies": {
-    "jquery": "~2.1.4"
-  }
+  "license": "UNLICENSED",
+  "private": true
 }

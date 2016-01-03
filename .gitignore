@@ -28,4 +28,4 @@ Thumbs.db
 # NPM/Bower
 bower_components
 node_modules
-.tscache
+dist

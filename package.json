@@ -1,45 +1,42 @@
 {
-  "name": "dan-paquettes-portfolio",
   "version": "0.0.1",
-  "description": "My public portfolio.",
-  "main": "public/index.html",
+  "scripts": {
+    "test": "grunt --verbose"
+  },
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "autoprefixer": "^6.1.2",
+    "grunt": "^0.4.5",
+    "grunt-cache-breaker": "^2.0.1",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-postcss": "^0.7.1",
+    "grunt-sass": "^1.1.0",
+    "grunt-scss-lint": "^0.3.8"
+  },
+  "name": "danpaquette.github.io",
+  "description": "Public portfolio for Dan Paquette.",
+  "main": "gruntfile.js",
+  "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/danpaquette/Portfolio.git"
+    "url": "git+https://github.com/danpaquette/danpaquette.github.io.git"
   },
   "keywords": [
     "portfolio",
-    "designer",
-    "user",
-    "experience",
-    "web",
+    "personal",
+    "ux",
     "design",
     "web",
-    "development",
-    "graphic",
-    "design",
-    "logo",
-    "design",
-    "branding",
-    "user",
-    "interface"
+    "development"
   ],
   "author": "Dan Paquette",
   "bugs": {
-    "url": "https://github.com/danpaquette/Portfolio/issues"
+    "url": "https://github.com/danpaquette/danpaquette.github.io/issues"
   },
-  "homepage": "https://github.com/danpaquette/Portfolio#readme",
-  "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-cli": "^0.1.13",
-    "grunt-contrib-clean": "^0.7.0",
-    "grunt-contrib-jshint": "^0.11.2",
-    "grunt-contrib-uglify": "^0.11.0",
-    "grunt-sass": "^1.0.0",
-    "grunt-scss-lint": "^0.3.8"
-  },
-  "scripts": {
-    "test": "grunt travis --verbose"
-  },
-  "license": "UNLICENSED"
+  "homepage": "https://github.com/danpaquette/danpaquette.github.io#readme"
 }

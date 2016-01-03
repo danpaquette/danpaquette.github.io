@@ -1,0 +1,39 @@
+/**
+ *
+ * http://humanstxt.org
+ *
+ * An initiative to know the creators of the  website.
+ *
+ */
+
+/**
+ *
+ * TEAM
+ *
+ */
+
+Designer/Developer:
+Twitter:
+
+Company:
+Company URI:
+Company Twitter:
+
+/**
+ *
+ * THANKS
+ *
+ */
+
+Person: Role
+
+/**
+ *
+ * SITE
+ *
+ */
+
+Last Update:
+Standards:
+Components: LWM CSS Boilerplate, LWM Project Boilerplate
+Software:
