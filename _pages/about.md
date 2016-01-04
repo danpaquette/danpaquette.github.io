@@ -2,6 +2,7 @@
 collection: pages
 title: about
 permalink: about/
+lauout: page
 ---
 {% include header.html %}
 
