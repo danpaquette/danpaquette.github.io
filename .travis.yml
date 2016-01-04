@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - stable
 before_script:
-  - rvm install
+  - rvm install ruby --latest
   - npm install -g bower
   - bower install
   - gem install scss-lint
