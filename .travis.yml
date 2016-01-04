@@ -1,8 +1,10 @@
-language: node_js
+language: ruby
+rvm:
+  - latest
 node_js:
   - stable
 before_script:
-  - rvm install ruby --latest
+  - nvm install stable
   - npm install -g bower
   - bower install
   - gem install scss-lint
