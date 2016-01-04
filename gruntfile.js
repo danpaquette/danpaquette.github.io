@@ -227,7 +227,14 @@ module.exports = function(grunt) {
     "build-js",
     "copy:public",
     "cachebreaker:css",
-    "cachebreaker:js",
+    "cachebreaker:js"
+  ]);
+
+
+  /**
+   * Jekyll
+   */
+  grunt.registerTask("build-jekyll", [
     "jekyll:dist"
   ]);
 };
