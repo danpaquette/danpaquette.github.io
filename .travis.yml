@@ -1,6 +1,6 @@
 language: ruby
 rvm:
-  - ruby-head
+  - 2.2.0
 before_script:
   - nvm install stable
   - npm install -g bower
