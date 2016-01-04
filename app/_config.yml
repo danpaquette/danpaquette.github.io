@@ -1,0 +1,7 @@
+permalink: pretty
+baseurl: https://danpaquette.net
+collections:
+  pages:
+    output: true
+  portfolio:
+    output: true

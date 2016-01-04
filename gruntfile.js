@@ -9,6 +9,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-cache-breaker");
+  grunt.loadNpmTasks('grunt-jekyll');
 
   grunt.initConfig({
 
@@ -26,14 +27,14 @@ module.exports = function(grunt) {
           dest: "dist/resources"
         },{
           expand: true,
-          cwd: "resources/html",
+          cwd: "app",
           src: [
             "**/*"
           ],
           dest: "dist/"
         },{
           expand: true,
-          cwd: "config/public",
+          cwd: "config/root",
           src: [
             "**/*"
           ],
@@ -70,15 +71,16 @@ module.exports = function(grunt) {
      * Deletes all files and directories as specified.
      */
     clean: {
-      dist: [
-        "dist"
+      all: [
+        "dist",
+        ".test"
       ],
       css: [
         "dist/resources/css"
       ],
       js: [
         "dist/resources/js"
-      ]
+      ],
     },
 
     /**
@@ -184,6 +186,14 @@ module.exports = function(grunt) {
           src: ["dist/index.html"]
         }
       }
+    },
+    jekyll: {
+      dist: {
+        options: {
+          src: 'dist',
+          dest: './.test'
+        }
+      }
     }
   });
 
@@ -195,7 +205,7 @@ module.exports = function(grunt) {
     "clean:css",
     "sass:resources",
     "postcss:dist",
-    "cssmin:vendor",
+    "cssmin:vendor"
   ]);
 
   /**
@@ -205,18 +215,19 @@ module.exports = function(grunt) {
     "jshint",
     "clean:js",
     "uglify:resources",
-    "uglify:vendor",
+    "uglify:vendor"
   ]);
 
   /**
    * JS
    */
   grunt.registerTask("default", [
-    "clean:dist",
+    "clean:all",
     "build-css",
     "build-js",
     "copy:public",
     "cachebreaker:css",
-    "cachebreaker:js"
+    "cachebreaker:js",
+    "jekyll:dist"
   ]);
 };
