@@ -1,25 +1,77 @@
-# Cycle Admin Portal
+# danpaquette.github.io
 
-Cycle's administrative employee portal.
+[![Build Status](https://travis-ci.org/danpaquette/danpaquette.github.io.svg?branch=dev)](https://travis-ci.org/danpaquette/danpaquette.github.io)
+[![Dependencies](https://david-dm.org/danpaquette/danpaquette.github.io/dev.svg)](https://david-dm.org/danpaquette/danpaquette.github.io/dev/)
+[![Development Dependencies](https://david-dm.org/danpaquette/danpaquette.github.io/dev/dev-status.svg)](https://david-dm.org/danpaquette/danpaquette.github.io/dev/#info=devDependencies)
 
-## Getting Started
+Public portfolio for Dan Paquette.
 
-Install Nodejs, the Grunt CLI, and Bower on your computer. [Follow the detailed instructions here](http://gruntjs.com/getting-started) to get Node.js and the grunt-cli working.
+## Preparing the Environment
 
-For CSS Linting, please [follow the instructions here](https://github.com/brigade/scss-lint) to install scss-lint.
+- **Install Node.js**: [Follow the instructions here](https://nodejs.org/en/download/) to install Node.js on your particular operating system.
 
-* Run `npm install` in the project root.
-* Run `bower install` in the project root.
-* Once the installation has completed, run `build-css` and `build-javascript` grunt tasks to precompile and build files.
+- **Install Ruby**: [Follow the instructions here](https://www.ruby-lang.org/en/documentation/installation/) to install Ruby on your particular operating system.
 
-## States
+- **Install Grunt**: Run `npm install -g grunt-cli`, or [follow the instructions](http://gruntjs.com/getting-started) here to install the Grunt CLI
 
-Active/Inactive = Current active item
-Revealed/Hidden = Items that are revealed/hidden
-Collapsed/Expanded = Items that are collapsed/expanded
+- **Install Bower**: Run `npm install -g bower`, or [follow the instructions here](http://bower.io/#install-bower) to install Bower.
 
-## Resources Differences
+- **Install Sass**: Run `gem install sass`, or [follow the instructions here](http://sass-lang.com/install) to install Sass.
 
-The primary differences between 'cycle-portal', and the 'cycle-admin-portal' are the regular module views in 'templates' and the views/styles in 'templates/global' and 'scss/global'.
+- **Install SCSS Lint**: Run `gem install scss_lint`, or [follow the instructions here](https://github.com/brigade/scss-lint) to install SCSS Lint.
 
-All other components/styles/dependencies, are identical and should remain identical between both repositories.
+- **Install Jekyll**: Run `gem install jekyll`, or [follow the instructions here](http://jekyllrb.com/docs/quickstart/) to install Jekyll
+
+**Warning for Windows Users**: You may have to restart after each installation step so that the PATH variable is properly updated.
+
+## Building for Local Testing and Production
+
+####Building for Local Testing####
+
+Running `grunt local-test` will output a completed, Jekyll-compiled website in the `/.test` directory.
+
+Running `start-connect` will open a Connect server on at `http://localhost:8080/` with the `/.test` directory allowing you to test locally.
+
+Running `build-css` or `build-js` will build the CSS and Javascript respectively.
+
+####Building for Production####
+
+Run `grunt` to run the default Grunt task and build the production `/dist` directory. Production, in this case, is a Jekyll-ready configuration for deployment on Github pages. Github will then manage the final conversion into a fully navigable website.
+
+## Code Style
+
+#### HTML
+
+[Code Guide](http://codeguide.co/#html)
+
+- Self closing tags must use a trailing forward slash (e.g. `<img src="#" />`.
+- Tags that do not require a closing tag (e.g. `<li>`) should always be closed with their corresponding closing tag (e.g. `<li></li>`)
+- Use https for all hosted third party inclusions. We don't use protocol-relative URLs for practical and security reasons. [See Paul Irish's Update](http://www.paulirish.com/2010/the-protocol-relative-url/)
+- Use [WAI-ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) where necessary.
+
+#### CSS
+
+[Code Guide](http://codeguide.co/#css)
+
+- When feasible, default color palettes should comply with [WCAG color contrast guidelines](http://www.w3.org/TR/WCAG20/#visual-audio-contrast).
+- Always include alternative styles for `:focus` styles (via e.g. `outline: none;`) See [this A11Y Project post](http://a11yproject.com/posts/never-remove-css-outlines/) for more details.
+
+## Naming Conventions
+
+#### States
+
+- **Primary**: Primary interface color used for CTAs.
+- **Success**: A positive action like a confirmation or completed task.
+- **Notice**: Non-essential information, but nonetheless could be help add context or provide additional defails.
+- **Warning**: Required additional caution or attention in order to complete a task.
+- **Danger**: A negative action like an error or a failed task.
+- **Readonly/Disabled/Muted**: Auxiliary states that may be added on a case-by-case basis for forms, buttons, text etc.
+
+#### Indicators
+
+Indicators speak to the elements current state in relation to the visitor. We use three pairs of states to talk about elements and their appearances.
+
+- **Active/Inactive**: Active elements refer to elements that are currently selected and in use. Inactive elements are elements available for use but are currently not selected.
+- **Expanded/Collapsed**: Expanded/Collapsed elements have visible components that trigger an element to expand additional options or capabilities (e.g. dropdown, accordion). When expanded, those additional options are available. When collapsed, those additional options are hidden.
+- **Revealed/Hidden**: Revealed/Hidden elements are encapsulated elements that may be triggered by one or more encapsulated elements on the page (e.g. modals, alerts)
+
