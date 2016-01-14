@@ -24,7 +24,7 @@ Public portfolio for Dan Paquette.
 
 **Warning for Windows Users**: You may have to restart after each installation step so that the PATH variable is properly updated.
 
-## Building Local Testing and for Production
+## Building for Local Testing and Production
 
 ####Building for Local Testing####
 
