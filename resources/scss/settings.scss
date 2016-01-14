@@ -1,0 +1,8 @@
+$global-typography-font-size: 1.6rem !default;
+$global-body-font-size: 1.6em !default; // Fix for font sizing bug in Chromium: https://code.google.com/p/chromium/issues/detail?id=320754
+$global-typography-line-height: 1.75 !default;
+$global-typography-font-stack: '"Raleway", helvetica, arial, sans-serif' !default;
+$global-typography-font-color: #666 !default;
+
+$brand-color: #cd6927;
+$work-navigation-header-height: 5rem;

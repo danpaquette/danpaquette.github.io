@@ -1,0 +1,55 @@
+$slideshow-nav-inactive-color: #c4b8c1;
+$slideshow-nav-active-color: #821e53;
+
+.slideshow {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+.slideshow > .slides {
+  position: relative;
+}
+
+.slideshow > .slides > .slide {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin: 0;
+}
+
+.slideshow > .slides > .slide:first-child {
+  position: relative;
+}
+
+.slideshow > .slides > .slide.active {
+  z-index: 5;
+}
+
+.slideshow-nav {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-top: 2rem;
+}
+
+.slideshow-nav > li {
+  margin: .2rem;
+  display: inline-block;
+  background: lighten($global-typography-font-color, 40%);
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 100%;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background .25s ease-in-out;
+}
+
+.slideshow-nav > li:hover,
+.slideshow-nav > .active {
+  background: $global-typography-font-color;
+}

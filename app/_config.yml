@@ -3,5 +3,5 @@ baseurl: https://danpaquette.net
 collections:
   pages:
     output: true
-  portfolio:
+  work:
     output: true

@@ -1,0 +1,10 @@
+body {
+  padding-top: $work-navigation-header-height;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  background: $white;
+  padding: 6rem 0;
+}

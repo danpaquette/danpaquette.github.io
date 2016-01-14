@@ -10,6 +10,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-cache-breaker");
   grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-contrib-connect');
 
   grunt.initConfig({
 
@@ -22,7 +23,8 @@ module.exports = function(grunt) {
           expand: true,
           cwd: "resources",
           src: [
-            "img/**/*"
+            "img/**/*",
+            "work/**/*"
           ],
           dest: "dist/resources"
         },{
@@ -80,7 +82,7 @@ module.exports = function(grunt) {
       ],
       js: [
         "dist/resources/js"
-      ],
+      ]
     },
 
     /**
@@ -151,7 +153,8 @@ module.exports = function(grunt) {
       vendor: {
         files: {
           "dist/resources/js/vendor.min.js": [
-
+            "lib/jquery/jquery-2.1.4.min.js",
+            "lib/jquery/jquery.mobile.custom.min.js"
           ]
         }
       }
@@ -187,11 +190,28 @@ module.exports = function(grunt) {
         }
       }
     },
+
+    /**
+     * Builds Jekyll source files from /dist into /.test
+     */
     jekyll: {
       dist: {
         options: {
           src: 'dist',
           dest: './.test'
+        }
+      }
+    },
+
+    /**
+     * Creates a web server at the specified port.
+     */
+    connect: {
+      server: {
+        options: {
+          port: 8080,
+          base: '.test',
+          keepalive: true
         }
       }
     }
@@ -230,11 +250,30 @@ module.exports = function(grunt) {
     "cachebreaker:js"
   ]);
 
-
   /**
    * Jekyll
    */
   grunt.registerTask("build-jekyll", [
+    "jekyll:dist"
+  ]);
+
+  /**
+   * Connect
+   */
+  grunt.registerTask("start-connect", [
+    "connect"
+  ]);
+
+  /**
+   * JS
+   */
+  grunt.registerTask("local-test", [
+    "clean:all",
+    "build-css",
+    "build-js",
+    "copy:public",
+    "cachebreaker:css",
+    "cachebreaker:js",
     "jekyll:dist"
   ]);
 };

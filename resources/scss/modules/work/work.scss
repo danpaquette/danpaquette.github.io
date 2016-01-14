@@ -1,0 +1,77 @@
+.work-items > * {
+  margin-bottom: 4rem;
+}
+
+// Work Intro
+
+.work-intro {
+  margin-bottom: 6rem;
+}
+
+.work-intro-text {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: lighten($global-typography-font-color, 20%);
+  line-height: 1.4;
+}
+
+.work-intro-tags {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.work-intro-tags > .work-intro-tag {
+  margin-right: 2rem;
+  font-size: 1.4rem;
+  color: lighten($global-typography-font-color, 20%);
+}
+
+// Work Navigation
+
+.work-navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: $work-navigation-header-height;
+  z-index: 1000;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, .5);
+  background: $white;
+}
+
+.work-navigation > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.work-navigation-previous,
+.work-navigation-next {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.work-navigation-previous {
+  left: 0;
+}
+
+.work-navigation-next {
+  right: 0;
+}
+
+.work-navigation > ul > li > a {
+  display: block;
+  line-height: $work-navigation-header-height;
+  padding: 0 2rem;
+  color: lighten($global-typography-font-color, 20%);
+  font-weight: bold;
+  transition: background .25s ease-in-out, color .25s ease-in-out;
+}
+
+.work-navigation > ul > li > a:hover {
+  color: $white;
+  background: $global-typography-font-color;
+}
