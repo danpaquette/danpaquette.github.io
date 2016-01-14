@@ -1,11 +1,7 @@
 ---
-collection: pages
-title: about
+title: About
+description: About Description
 permalink: about/
-lauout: page
+layout: default
 ---
-{% include header.html %}
-
 Hello World!
-
-{% include footer.html %}

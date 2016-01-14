@@ -1,4 +1,7 @@
 permalink: pretty
+baseurl: https://danpaquette.net
 collections:
-  pages
+  pages:
+    output: true
+  work:
     output: true
