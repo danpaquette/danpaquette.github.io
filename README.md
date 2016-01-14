@@ -28,7 +28,7 @@ Public portfolio for Dan Paquette.
 
 ####Building for Local Testing####
 
-Run `grunt local-test` will output a completed, Jekyll-compiled website in the `/.test` directory.
+Running `grunt local-test` will output a completed, Jekyll-compiled website in the `/.test` directory.
 
 Running `start-connect` will open a Connect server on at `http://localhost:8080/` with the `/.test` directory allowing you to test locally.
 
@@ -40,7 +40,7 @@ Run `grunt` to run the default Grunt task and build the production `/dist` direc
 
 ## Code Style
 
-### HTML
+#### HTML
 
 [Code Guide](http://codeguide.co/#html)
 
@@ -49,14 +49,14 @@ Run `grunt` to run the default Grunt task and build the production `/dist` direc
 - Use https for all hosted third party inclusions. We don't use protocol-relative URLs for practical and security reasons. [See Paul Irish's Update](http://www.paulirish.com/2010/the-protocol-relative-url/)
 - Use [WAI-ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA) where necessary.
 
-### CSS
+#### CSS
 
 [Code Guide](http://codeguide.co/#css)
 
 - When feasible, default color palettes should comply with [WCAG color contrast guidelines](http://www.w3.org/TR/WCAG20/#visual-audio-contrast).
 - Always include alternative styles for `:focus` styles (via e.g. `outline: none;`) See [this A11Y Project post](http://a11yproject.com/posts/never-remove-css-outlines/) for more details.
 
-### Naming Conventions
+## Naming Conventions
 
 #### States
 
