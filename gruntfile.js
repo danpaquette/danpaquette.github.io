@@ -10,7 +10,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-cache-breaker");
   grunt.loadNpmTasks('grunt-jekyll');
-  grunt.loadNpmTasks('grunt-contrib-connect');
 
   grunt.initConfig({
 
@@ -21,22 +20,21 @@ module.exports = function(grunt) {
       public: {
         files: [{
           expand: true,
-          cwd: "resources",
+          cwd: "src/resources",
           src: [
-            "img/**/*",
-            "work/**/*"
+            "img/**/*"
           ],
           dest: "dist/resources"
         },{
           expand: true,
-          cwd: "app",
+          cwd: "src/jekyll",
           src: [
             "**/*"
           ],
           dest: "dist/"
         },{
           expand: true,
-          cwd: "config/root",
+          cwd: "public",
           src: [
             "**/*"
           ],
@@ -50,7 +48,7 @@ module.exports = function(grunt) {
      */
     scsslint: {
       allFiles: [
-        "resources/scss/**/*.scss"
+        "src/resources/scss/**/*.scss"
       ],
       options: {
         config: "config/build/scsslint.yml",
@@ -66,7 +64,7 @@ module.exports = function(grunt) {
       options: {
         "jshintrc": "config/build/.jshintrc"
       },
-      all: ["resources/js/**/*.js"]
+      all: ["src/resources/js/**/*.js"]
     },
 
     /**
@@ -95,7 +93,7 @@ module.exports = function(grunt) {
       },
       resources: {
         files: {
-          "dist/resources/css/main.min.css" : "resources/scss/init.scss"
+          "dist/resources/css/main.min.css" : "src/resources/scss/init.scss"
         }
       }
     },
@@ -127,7 +125,7 @@ module.exports = function(grunt) {
       vendor: {
         files: {
           "dist/resources/css/vendor.min.css": [
-            "bower_components/normalize-css/normalize.css"
+            "node_modules/normalize.css/normalize.css"
           ]
         }
       }
@@ -146,15 +144,14 @@ module.exports = function(grunt) {
       resources: {
         files: {
           "dist/resources/js/main.min.js": [
-            "resources/js/**/*.js"
+            "src/resources/js/**/*.js"
           ]
         }
       },
       vendor: {
         files: {
           "dist/resources/js/vendor.min.js": [
-            "lib/jquery/jquery-2.1.4.min.js",
-            "lib/jquery/jquery.mobile.custom.min.js"
+
           ]
         }
       }
