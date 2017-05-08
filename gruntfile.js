@@ -6,6 +6,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-scss-lint");
   grunt.loadNpmTasks("grunt-postcss");
   grunt.loadNpmTasks("grunt-contrib-jshint");
+  grunt.loadNpmTasks("grunt-contrib-connect");
   grunt.loadNpmTasks("grunt-contrib-uglify");
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-cache-breaker");
@@ -151,7 +152,8 @@ module.exports = function(grunt) {
       vendor: {
         files: {
           "dist/resources/js/vendor.min.js": [
-
+            "node_modules/jquery/dist/jquery.min.js",
+            "node_modules/mattboldt.typed.js/dist/typed.min.js"
           ]
         }
       }

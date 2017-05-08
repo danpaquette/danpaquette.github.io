@@ -1,0 +1,22 @@
+
+
+.work-entry {
+  display: block;
+  position: relative;
+}
+
+.work-entry > .work-entry-label {
+  display: inline-block;
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  background: $brand-color;
+  color: $white;
+  padding: 0 1rem;
+  transition: .25s color ease-in-out;
+  margin: 0;
+}
+
+.work-entry:hover > .work-entry-label {
+  color: $secondary-color;
+}

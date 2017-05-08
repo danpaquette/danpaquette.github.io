@@ -31,12 +31,21 @@
 // **************************************************************************
 
 @import 'base/main';
-@import 'base/containers';
 @import 'base/typography';
 
-@import 'modules/hero-header';
-@import 'modules/slideshow';
+@import 'modules/main-header/main-navigation';
 
+@import 'modules/hero';
+@import 'modules/slideshow';
+@import 'modules/typed';
+@import 'modules/current-status';
+@import 'modules/outline-button';
+@import 'modules/page-intro';
+
+
+
+@import 'modules/work/work-entry';
 @import 'modules/work/work';
+@import 'modules/work/work-hero';
 @import 'modules/work/concurra';
 @import 'modules/work/erie';

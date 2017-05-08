@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" lang="en">
   <head>
     <!-- Details -->
-    <title>{{site.data.settings.title}} {% if page.layout == 'home' %}&bull; Design, Web, Experience{% else %}&bull; {{page.title}}{% endif %}</title>
+    <title>{{site.data.settings.title}} &bull; {{page.title}}</title>
     <meta name="description" content="{{page.description}}" />
 
     <!-- Meta -->
@@ -27,7 +27,7 @@
     <link rel="apple-touch-icon-precomposed" href="/resources/img/meta/apple/ipad-retina-152x152.png" sizes="152x152" />
 
     <!-- Open Graph Protocol -->
-    <meta property="og:title" content="{{site.data.settings.title}} {% if page.layout == 'home' %}&bull; Design, Web, Experience{% else %}&bull; {{page.title}}{% endif %}" />
+    <meta property="og:title" content="{{site.data.settings.title}} &bull; {{page.title}}" />
     <meta property="og:site_name" content="{{site.data.settings.title}}" />
     <meta property="og:description" content="{{page.description}}" />
     <meta property="og:image" content="/resources/img/meta/open-graph/og-600x600.png" />
@@ -37,7 +37,7 @@
 
     <!-- Twitter Cards -->
     <meta property="twitter:card" content="summary" />
-    <meta property="twitter:title" content="{{site.data.settings.title}} {% if page.layout == 'home' %}&bull; Design, Web, Experience{% else %}&bull; {{page.title}}{% endif %}" />
+    <meta property="twitter:title" content="{{site.data.settings.title}} &bull; {{page.title}}" />
     <meta property="twitter:image" content="/resources/img/meta/open-graph/og-600x600.png" />
     <meta property="twitter:description" content="{{page.description}}" />
     <meta property="twitter:site" content="@{{site.data.social.twitter.username}}" />
@@ -49,3 +49,28 @@
     <link rel="stylesheet" href="/resources/css/main.min.css" />
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-navigation-branding" href="/">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 500 202.712">
+            <title>{{site.data.settings.title}} &bull; {{page.title}}</title>
+            <path class="main-navigation-branding-symbol" d="M398.67,0c-28.585,0-55.158,11.708-74.304,32.438 C305.221,11.708,278.629,0,250.058,0c-28.628,0-55.247,11.745-74.384,32.528C156.52,11.779,129.928,0.053,101.331,0.053H0v202.659 h101.331c28.624,0,55.22-11.735,74.384-32.521c19.15,20.754,45.732,32.471,74.343,32.471h101.331l0.019-101.318 c0-26.062,21.207-47.264,47.263-47.264c26.051,0,47.254,21.201,47.254,47.264v101.318H500V101.343C500,45.46,454.543,0,398.67,0 M250.058,54.079c26.061,0,47.268,21.201,47.268,47.264v47.246h-47.268c-26.058,0-47.272-21.197-47.272-47.246 C202.785,75.28,224,54.079,250.058,54.079 M54.07,54.123l47.261,0.009c26.062,0,47.245,21.196,47.245,47.252 c0,26.062-21.183,47.251-47.245,47.251l-47.261,0.009V54.123z"/>
+          </svg>
+        </a>
+        <ul class="main-navigation-list">
+          <li>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="/work/">Work</a>
+          </li>
+          <li>
+            <a href="/resources/">Resources</a>
+          </li>
+          <li>
+            <a href="/contact/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+

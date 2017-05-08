@@ -1,0 +1,68 @@
+$main-header-height: 10rem;
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: $main-header-height;
+  padding: 0 5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.main-navigation-branding {
+  display: flex;
+  align-items: center;
+  width: 10rem;
+  position: relative;
+}
+
+.main-navigation-branding .main-navigation-branding-symbol {
+  fill: #555555;
+  transition: .25s fill ease-in-out;
+}
+
+.main-navigation-branding:hover .main-navigation-branding-symbol {
+  fill: $black;
+}
+
+.main-navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-navigation-list > li {
+  margin-left: 2rem;
+}
+
+.main-navigation-list > li > a {
+  display: block;
+  position: relative;
+  color: $global-typography-font-color;
+  transition: .25s color ease-in-out;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.main-navigation-list > li > a:hover {
+  color: #000;
+}
+
+.main-navigation-list > li > a::after {
+  position: absolute;
+  top: calc(100% + .4rem);
+  right: 0;
+  left: 0;
+  content: '';
+  display: block;
+  height: .3rem;
+  background: $black;
+  opacity: 0;
+  transition: .25s opacity ease-in-out;
+}
+
+.main-navigation-list > li > a:hover::after {
+  opacity: 1;
+}

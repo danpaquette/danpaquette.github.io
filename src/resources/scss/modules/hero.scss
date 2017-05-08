@@ -1,0 +1,28 @@
+.hero {
+  min-height: 65rem;
+  margin-top: -$main-header-height;
+  background: url('/resources/img/ui/toledo-background.jpg') top center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding-top: 25rem;
+}
+
+.hero > .hero-content {
+  max-width: 80rem;
+  padding: 0 5rem;
+}
+
+.hero > .hero-content > .hero-title {
+  display: inline;
+  background: $brand-color;
+  box-decoration-break: clone;
+  box-shadow: 1rem 0 0 $brand-color, -1rem 0 0 $brand-color;
+  padding: .2rem 0;
+  color: $white;
+  line-height: 1.4;
+}
+
+.hero .hero-typed {
+  color: $secondary-color;
+}

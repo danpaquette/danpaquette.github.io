@@ -1,0 +1,35 @@
+.current-status {
+  color: $white;
+  background: $brand-color;
+  font-weight: 500;
+  padding: 3rem 0;
+  margin-bottom: 5rem;
+}
+
+.current-status-message a {
+  color: $white;
+  text-decoration: underline;
+  transition: .25s color ease-in-out;
+}
+
+.current-status-message a:hover {
+  color: $secondary-color;
+}
+
+.current-status-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.current-status-heading {
+  margin-bottom: .8rem;
+  line-height: 1.2;
+}
+
+.current-status-message {
+  font-size: 1.4rem;
+  max-width: 70%;
+  line-height: 1.5;
+  margin: 0;
+}
