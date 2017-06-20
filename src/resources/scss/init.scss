@@ -33,14 +33,15 @@
 @import 'base/main';
 @import 'base/typography';
 
-@import 'modules/main-header/main-navigation';
-
+@import 'modules/main-navigation';
+@import 'modules/footer-navigation';
 @import 'modules/hero';
 @import 'modules/slideshow';
 @import 'modules/typed';
 @import 'modules/current-status';
 @import 'modules/outline-button';
 @import 'modules/page-intro';
+@import 'modules/contact-block';
 
 
 

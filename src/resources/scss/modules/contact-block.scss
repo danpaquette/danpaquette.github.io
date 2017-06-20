@@ -1,0 +1,55 @@
+.contact-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 45rem;
+  background: url('/resources/img/ui/wireframe.jpg') center center no-repeat;
+  background-size: cover;
+  margin-top: 5rem;
+}
+
+.contact-block > .contact-block-email {
+  display: inline-block;
+  background: $brand-color;
+  color: $white;
+  padding: 0 2rem;
+  transition: .25s background ease-in-out;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: .2rem;
+}
+
+.contact-block > .contact-block-email:hover {
+  background: $black;
+}
+
+.contact-block > .contact-block-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-block > .contact-block-social-list > li {
+
+}
+
+.contact-block > .contact-block-social-list > li > a {
+  background: $brand-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 2rem;
+  color: $white;
+  margin: 0 .2rem;
+  transition: .25s background ease-in-out;
+}
+
+.contact-block > .contact-block-social-list > li > a:hover {
+  background: $black;
+}
