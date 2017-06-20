@@ -12,20 +12,9 @@
  *
  */
 
-Designer/Developer:
-Twitter:
-
-Company:
-Company URI:
-Company Twitter:
-
-/**
- *
- * THANKS
- *
- */
-
-Person: Role
+Designer/Developer: Dan Paquette
+Twitter: @danpaquette
+Email: hello@danpaquette.net
 
 /**
  *
@@ -33,7 +22,7 @@ Person: Role
  *
  */
 
-Last Update:
-Standards:
-Components: LWM CSS Boilerplate, LWM Project Boilerplate
-Software:
+Last Update: June 19, 2017 at 10:29 PM
+Standards: http://codeguide.co
+Components: LWM CSS Boilerplate, LWM Project Boilerplate, Jekyll
+Software: PHPStorm, NodeJS, SASS
