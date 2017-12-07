@@ -1,12 +1,27 @@
 .hero {
-  min-height: 65rem;
+  min-height: 100vh;
   margin-top: -$main-header-height;
   background: url('/resources/img/ui/toledo-background.jpg') top center no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
   padding-top: 25rem;
-  margin-bottom: 5rem;
+  position: relative;
+}
+
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, rgba($black, .65) 0%, rgba($black, 0) 50%);
 }
 
 .hero > .hero-content {
@@ -22,6 +37,13 @@
   padding: .2rem 0;
   color: $white;
   line-height: 1.4;
+  font-size: 2.5rem;
+}
+
+@media #{map-get($media-queries, lg)} {
+  .hero > .hero-content > .hero-title {
+    font-size: 4rem;
+  }
 }
 
 .hero .hero-typed {

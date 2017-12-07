@@ -11,6 +11,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-cache-breaker");
   grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.initConfig({
 
@@ -24,6 +25,13 @@ module.exports = function(grunt) {
           cwd: "src/resources",
           src: [
             "img/**/*"
+          ],
+          dest: "dist/resources"
+        },{
+          expand: true,
+          cwd: "src/resources",
+          src: [
+            "fonts/**/*"
           ],
           dest: "dist/resources"
         },{
@@ -152,7 +160,6 @@ module.exports = function(grunt) {
       vendor: {
         files: {
           "dist/resources/js/vendor.min.js": [
-            "node_modules/jquery/dist/jquery.min.js",
             "node_modules/mattboldt.typed.js/dist/typed.min.js"
           ]
         }
@@ -203,12 +210,25 @@ module.exports = function(grunt) {
     },
 
     /**
+     * Watches files and builds a `local-test` for local development.
+     */
+    watch: {
+      scripts: {
+        files: ['src/**/*'],
+        tasks: ['local-test'],
+        options: {
+          spawn: false
+        }
+      }
+    },
+
+    /**
      * Creates a web server at the specified port.
      */
     connect: {
       server: {
         options: {
-          port: 8080,
+          port: 52816,
           base: '.test',
           keepalive: true
         }
@@ -261,6 +281,13 @@ module.exports = function(grunt) {
    */
   grunt.registerTask("start-connect", [
     "connect"
+  ]);
+
+  /**
+   * Watch
+   */
+  grunt.registerTask("start-watch", [
+    "watch"
   ]);
 
   /**

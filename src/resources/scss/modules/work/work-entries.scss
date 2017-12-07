@@ -1,0 +1,15 @@
+.work-entries {
+  margin-bottom: 10rem;
+}
+
+.work-entry {
+  display: block;
+  position: relative;
+  filter: grayscale(100%);
+  transition: filter .25s ease-in-out;
+  margin: 0;
+}
+
+.work-entry:hover {
+  filter: grayscale(0%);
+}

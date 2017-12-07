@@ -26,7 +26,7 @@ Public portfolio for Dan Paquette.
 
 ## Building for Local Testing and Production
 
-####Building for Local Testing####
+####Building for Local Testing
 
 Running `grunt local-test` will output a completed, Jekyll-compiled website in the `/.test` directory.
 
@@ -34,7 +34,7 @@ Running `start-connect` will open a Connect server on at `http://localhost:8080/
 
 Running `build-css` or `build-js` will build the CSS and Javascript respectively.
 
-####Building for Production####
+####Building for Production
 
 Run `grunt` to run the default Grunt task and build the production `/dist` directory. Production, in this case, is a Jekyll-ready configuration for deployment on Github pages. Github will then manage the final conversion into a fully navigable website.
 
@@ -55,23 +55,3 @@ Run `grunt` to run the default Grunt task and build the production `/dist` direc
 
 - When feasible, default color palettes should comply with [WCAG color contrast guidelines](http://www.w3.org/TR/WCAG20/#visual-audio-contrast).
 - Always include alternative styles for `:focus` styles (via e.g. `outline: none;`) See [this A11Y Project post](http://a11yproject.com/posts/never-remove-css-outlines/) for more details.
-
-## Naming Conventions
-
-#### States
-
-- **Primary**: Primary interface color used for CTAs.
-- **Success**: A positive action like a confirmation or completed task.
-- **Notice**: Non-essential information, but nonetheless could be help add context or provide additional defails.
-- **Warning**: Required additional caution or attention in order to complete a task.
-- **Danger**: A negative action like an error or a failed task.
-- **Readonly/Disabled/Muted**: Auxiliary states that may be added on a case-by-case basis for forms, buttons, text etc.
-
-#### Indicators
-
-Indicators speak to the elements current state in relation to the visitor. We use three pairs of states to talk about elements and their appearances.
-
-- **Active/Inactive**: Active elements refer to elements that are currently selected and in use. Inactive elements are elements available for use but are currently not selected.
-- **Expanded/Collapsed**: Expanded/Collapsed elements have visible components that trigger an element to expand additional options or capabilities (e.g. dropdown, accordion). When expanded, those additional options are available. When collapsed, those additional options are hidden.
-- **Revealed/Hidden**: Revealed/Hidden elements are encapsulated elements that may be triggered by one or more encapsulated elements on the page (e.g. modals, alerts)
-

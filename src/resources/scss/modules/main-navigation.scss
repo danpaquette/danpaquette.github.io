@@ -3,22 +3,38 @@ $main-header-height: 10rem;
 .main-navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
   height: $main-header-height;
-  padding: 0 5rem;
   position: relative;
   z-index: 1;
+}
+
+@media #{map-get($media-queries, lg)} {
+  .main-navigation {
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 9rem;
+  }
 }
 
 .main-navigation-branding {
   display: flex;
   align-items: center;
-  width: 10rem;
+  width: 6rem;
+  margin-bottom: 2rem;
   position: relative;
 }
 
+@media #{map-get($media-queries, lg)} {
+  .main-navigation-branding {
+    width: 10rem;
+    margin: 0;
+  }
+}
+
 .main-navigation-branding .main-navigation-branding-symbol {
-  fill: #555555;
+  fill: $logo-color;
   transition: .25s fill ease-in-out;
 }
 
@@ -37,17 +53,29 @@ $main-header-height: 10rem;
   margin-left: 2rem;
 }
 
+@media #{map-get($media-queries, lg)} {
+  .main-navigation-list > li {
+    margin-left: 4rem;
+  }
+}
+
+.main-navigation-list > li:first-child {
+  margin-left: 0;
+}
+
 .main-navigation-list > li > a {
   display: block;
   position: relative;
   color: $global-typography-font-color;
   transition: .25s color ease-in-out;
   line-height: 1;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .main-navigation-list > li > a:hover {
-  color: #000;
+  color: $black;
 }
 
 .main-navigation-list > li > a::after {

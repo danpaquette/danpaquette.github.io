@@ -6,7 +6,9 @@
   color: $brand-color;
   transition: .25s color ease-in-out, .25s background ease-in-out;
   flex: 0 0 auto;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .outline-button:hover {

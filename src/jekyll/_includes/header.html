@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
-    <!-- Details -->
-    <title>{{site.data.settings.title}} &bull; {{page.title}}</title>
-    <meta name="description" content="{{page.description}}" />
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107842671-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-107842671-1');
+    </script>
 
-    <!-- Meta -->
+    <!-- Technical Meta -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="cleartype" content="on" />
     <link rel="canonical" href="{{site.baseurl}}{{page.url}}" />
+
+    <!-- Page Details -->
+    <title>{{site.data.settings.title}} &bull; {{page.title}}</title>
+    <meta name="description" content="{{page.description}}" />
+
+    <!-- Verification -->
+    <meta name="p:domain_verify" content="016183d845eb4ff0ad9015696db6d761"/>
 
     <!-- Humans and Robots -->
     <link type="text/plain" rel="author" href="/humans.txt" />
@@ -21,10 +33,7 @@
     <link rel="icon" sizes="196x196" href="/resources/img/meta/shortcut/shortcut-196x196.png" />
 
     <!-- Apple Meta -->
-    <link rel="apple-touch-icon-precomposed" href="/resources/img/meta/apple/iphone-standard-60x60.png" sizes="60x60" />
-    <link rel="apple-touch-icon-precomposed" href="/resources/img/meta/apple/iphone-retina-120x120.png" sizes="120x120" />
-    <link rel="apple-touch-icon-precomposed" href="/resources/img/meta/apple/ipad-standard-76x76.png" sizes="76x76" />
-    <link rel="apple-touch-icon-precomposed" href="/resources/img/meta/apple/ipad-retina-152x152.png" sizes="152x152" />
+    <link rel="apple-touch-icon" href="/img/meta/apple/apple-152x152.png" />
 
     <!-- Open Graph Protocol -->
     <meta property="og:title" content="{{site.data.settings.title}} &bull; {{page.title}}" />
@@ -44,7 +53,7 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,600" />
+    <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i" rel="stylesheet">
     <link rel="stylesheet" href="/resources/css/vendor.min.css" />
     <link rel="stylesheet" href="/resources/css/main.min.css" />
   </head>
@@ -59,7 +68,16 @@
         </a>
         <ul class="main-navigation-list">
           <li>
-            <a href="/">Home</a>
+            <a href="/about/">About</a>
+          </li>
+          <li>
+            <a href="/work/">Work</a>
+          </li>
+          <li>
+            <a href="/curriculum-vitae/">Vitae</a>
+          </li>
+          <li>
+            <a href="/contact/">Contact</a>
           </li>
         </ul>
       </nav>

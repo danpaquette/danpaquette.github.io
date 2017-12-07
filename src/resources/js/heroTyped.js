@@ -1,5 +1,7 @@
-$(function(){
+var heroTyped = function() {
+
   "use strict";
+
   $(".hero-typed").typed({
     strings: [
       "product design.^3000",
@@ -10,4 +12,5 @@ $(function(){
     typeSpeed: 50,
     loop: true
   });
-});
+
+}();

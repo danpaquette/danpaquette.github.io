@@ -1,0 +1,138 @@
+.curriculum-vitae {
+  background: transparent;
+}
+
+// .curriculum-vitae-heading
+
+.curriculum-vitae .curriculum-vitae-heading {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: lighten($black, 50%);
+}
+
+.curriculum-vitae .cv-heading-vertical {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.curriculum-vitae .curriculum-vitae-heading-icon {
+  width: 4rem;
+  height: 100%;
+  margin-right: 1rem;
+}
+
+.curriculum-vitae .cv-heading-vertical .curriculum-vitae-heading-icon {
+  margin-bottom: 1rem;
+}
+
+// .curriculum-vitae-positions
+
+.curriculum-vitae .curriculum-vitae-positions {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.curriculum-vitae .curriculum-vitae-position {
+  padding-left: 5rem;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.curriculum-vitae .curriculum-vitae-position::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  bottom: -5rem;
+  left: 1.9rem;
+  width: .2rem;
+  background: lighten($black, 80%);
+}
+
+.curriculum-vitae .curriculum-vitae-position:last-child::before {
+  display: none;
+}
+
+.curriculum-vitae .curriculum-vitae-title {
+  position: relative;
+  display: inline-block;
+  color: $secondary-color;
+  font-weight: normal;
+  margin: 0 1.5rem 0 0;
+}
+
+.curriculum-vitae .curriculum-vitae-title::before {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: .6rem;
+  left: -4rem;
+  background: $white;
+  border-radius: 100%;
+  border: 2px solid lighten($black, 80%);
+}
+
+.curriculum-vitae .curriculum-vitae-title::after {
+  content: '';
+  width: .6rem;
+  height: .6rem;
+  position: absolute;
+  top: 1.3rem;
+  left: -3.3rem;
+  background: $secondary-color;
+  border-radius: 100%;
+}
+
+.curriculum-vitae .curriculum-vitae-dates {
+  font-weight: normal;
+}
+
+.curriculum-vitae .curriculum-vitae-company {
+  display: block;
+  font-weight: bold;
+  font-style: normal;
+  color: lighten($black, 50%);
+}
+
+// .curriculum-vitae-communities
+
+.curriculum-vitae-communities {
+  margin: 0 0 4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.curriculum-vitae-community {
+  margin-bottom: 2rem;
+}
+
+.curriculum-vitae-community-title {
+  color: $secondary-color;
+  margin: 0;
+}
+
+.curriculum-vitae-community-role {
+  display: block;
+  font-weight: bold;
+  color: lighten($black, 50%);
+}
+
+// .curriculum-vitae-skills
+
+.curriculum-vitae-skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.curriculum-vitae-skills > li {
+  margin: 0 .5rem .5rem 0;
+  background: lighten($black, 95%);
+  padding: .3rem 1rem;
+  border-radius: .3rem;
+}

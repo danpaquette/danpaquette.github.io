@@ -1,11 +1,13 @@
-$brand-color: #333333;
+$brand-color: #000;
 $secondary-color: #e76f17;
 
-$global-typography-font-size: 1.5rem !default;
-$global-body-font-size: 1.5em !default; // Fix for font sizing bug in Chromium: https://code.google.com/p/chromium/issues/detail?id=320754
+$global-typography-font-size: 1.6rem !default;
+$global-body-font-size: 1.6em !default; // Fix for font sizing bug in Chromium: https://code.google.com/p/chromium/issues/detail?id=320754
 $global-typography-line-height: 1.75 !default;
-$global-typography-font-stack: '"Raleway", helvetica, arial, sans-serif' !default;
+$global-typography-font-stack: 'karla, "Raleway", helvetica, arial, sans-serif' !default;
 $global-typography-font-color: #555 !default;
 
 $typography-anchor-color: $secondary-color;
 $typography-hr-color: #ececec;
+
+$logo-color: #000;

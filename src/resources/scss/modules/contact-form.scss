@@ -1,0 +1,119 @@
+.contact-form {
+  margin: 0 auto;
+}
+
+.contact-form .contact-form-field {
+  position: relative;
+  padding: 3rem 0 2px;
+  margin-bottom: 4rem;
+}
+
+.contact-form h2 {
+  color: $black;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.contact-form .contact-form-field > label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  font-weight: bold;
+  color: rgba($black, .6);
+  border-bottom: 3px solid rgba($black, .1);
+  pointer-events: none;
+  transition: .25s ease-in-out;
+}
+
+.contact-form .contact-form-field > label > .optional {
+  color: rgba($black, .2);
+}
+
+.contact-form .contact-form-field > label > .required {
+  color: $red;
+}
+
+.contact-form .contact-form-field > [type="text"],
+.contact-form .contact-form-field > [type="password"],
+.contact-form .contact-form-field > [type="email"],
+.contact-form .contact-form-field > [type="url"],
+.contact-form .contact-form-field > [type="date"],
+.contact-form .contact-form-field > [type="month"],
+.contact-form .contact-form-field > [type="time"],
+.contact-form .contact-form-field > [type="datetime"],
+.contact-form .contact-form-field > [type="datetime-local"],
+.contact-form .contact-form-field > [type="week"],
+.contact-form .contact-form-field > [type="number"],
+.contact-form .contact-form-field > [type="search"],
+.contact-form .contact-form-field > [type="tel"],
+.contact-form .contact-form-field > [type="color"],
+.contact-form .contact-form-field > select,
+.contact-form .contact-form-field > textarea {
+  background-color: transparent;
+  border: 1px solid rgba($black, .1);
+  border-bottom: 0;
+  border-radius: 0;
+  padding: 1rem;
+  height: 5rem;
+  font-size: 1.6rem;
+}
+
+.contact-form .contact-form-field > [type="file"] {
+  padding: 1.5rem;
+  height: 5rem;
+  background-color: rgba($black, .025);
+  width: 100%;
+  outline: none;
+}
+
+.contact-form .contact-form-field > textarea {
+  height: auto;
+  transition: none;
+}
+
+.contact-form .contact-form-field > [type="text"]:focus + label,
+.contact-form .contact-form-field > [type="file"]:focus + label,
+.contact-form .contact-form-field > [type="password"]:focus + label,
+.contact-form .contact-form-field > [type="email"]:focus + label,
+.contact-form .contact-form-field > [type="url"]:focus + label,
+.contact-form .contact-form-field > [type="date"]:focus + label,
+.contact-form .contact-form-field > [type="month"]:focus + label,
+.contact-form .contact-form-field > [type="time"]:focus + label,
+.contact-form .contact-form-field > [type="datetime"]:focus + label,
+.contact-form .contact-form-field > [type="datetime-local"]:focus + label,
+.contact-form .contact-form-field > [type="week"]:focus + label,
+.contact-form .contact-form-field > [type="number"]:focus + label,
+.contact-form .contact-form-field > [type="search"]:focus + label,
+.contact-form .contact-form-field > [type="tel"]:focus + label,
+.contact-form .contact-form-field > [type="color"]:focus + label,
+.contact-form .contact-form-field > select:focus + label,
+.contact-form .contact-form-field > textarea:focus + label {
+  border-bottom-color: $black;
+  color: $black;
+}
+
+.contact-form .contact-form-submit {
+  display: block;
+  width: 100%;
+  border: 2px solid $black;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $black;
+  transition: .2s linear;
+  outline: 0;
+  line-height: 1.5;
+  background: none;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.6rem;
+  padding: 2rem 4rem;
+}
+
+.contact-form .contact-form-submit:hover {
+  text-decoration: none;
+  opacity: 1;
+  color: $white;
+  background: $black;
+}
