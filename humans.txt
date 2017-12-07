@@ -25,4 +25,4 @@ Email: hello@danpaquette.net
 Last Update: June 19, 2017 at 10:29 PM
 Standards: http://codeguide.co
 Components: LWM CSS Boilerplate, LWM Project Boilerplate, Jekyll
-Software: PHPStorm, NodeJS, SASS
+Software: PHPStorm, Node, SASS, Grunt, Bower
