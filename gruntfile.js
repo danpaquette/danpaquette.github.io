@@ -31,7 +31,7 @@ module.exports = function(grunt) {
           expand: true,
           cwd: "src/resources",
           src: [
-            "fonts/**/*"
+            "files/**/*"
           ],
           dest: "dist/resources"
         },{
