@@ -1,0 +1,76 @@
+.restaurant-list {
+  padding: 0;
+  list-style: none;
+}
+
+.restaurant-list-item {
+  background: $white;
+}
+
+.restaurant-header {
+  display: block;
+  position: relative;
+  padding-bottom: 65%;
+}
+
+.restaurant-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.restaurant-name {
+  position: absolute;
+  bottom: 1rem;
+  left: -.5rem;
+  background: $brand-color;
+  color: $white;
+  padding: .7rem 1rem .8rem 1rem;
+  line-height: 1;
+}
+
+.restaurant-name .fa-star {
+  font-size: 1.6rem;
+  color: $yellow;
+}
+
+.restaurant-address {
+  display: block;
+  padding: 1rem 1.5rem 0 1.5rem;
+  font-weight: bold;
+}
+
+.restaurant-details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem 1rem 1.5rem;
+}
+
+.restaurant-categories {
+  margin-right: .8rem;
+  font-weight: normal;
+}
+
+.restaurant-icons {
+  display: flex;
+  align-items: center;
+}
+
+.restaurant-icon-vegan,
+.restaurant-icon-gluten-free {
+  width: 2rem;
+  opacity: .25;
+  margin-right: .8rem;
+}
+
+.restaurant-icon-price {
+  opacity: .25;
+  color: $black;
+
+}

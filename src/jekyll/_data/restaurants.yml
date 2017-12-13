@@ -1,0 +1,168 @@
+ - name: "Manhattan's Pub 'n Cheer"
+   categories: American Pub
+   website: http://www.manhattanstoledo.com/
+   address: 1516 Adams St, Toledo, OH 43604
+   price: 2
+   vegan: true
+   glutenFree: false
+   star: true
+ - name: "M Osteria Bar & Lounge"
+   categories: Italian Street Food
+   website: http://mosteriatoledo.com/
+   address: 611 Monroe St, Toledo, OH 43604
+   price: 2
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "Registry Bistro"
+   categories: American Contemporary
+   website: https://www.registrybistro.com/
+   address: 144 N Superior St, Toledo, OH 43604
+   price: 3
+   vegan: true
+   glutenFree: true
+   star: true
+ - name: "Kyoto Ka"
+   categories: Japanese, Sushi
+   website: http://kyotoka.com/
+   address: 300 Madison Ave, Toledo, OH 43604
+   price: 2
+   vegan: true
+   glutenFree: true
+   star: false
+ - name: "Fleetwood's Tap Room"
+   categories: Pub Food, Late-Night
+   website: http://hensvilletoledo.com/fleetwoods-tap-room
+   address: 28 N St Clair St, Toledo, OH 43604
+   price: 3
+   vegan: true
+   glutenFree: true
+   star: false
+ - name: "San Marcos Restaurant"
+   categories: Mexican
+   website: http://sanmarcosmexicanrestaurants.com/
+   address: 235 Broadway St, Toledo, OH 43604
+   price: 1
+   vegan: true
+   glutenFree: true
+   star: true
+ - name: "Bangkok Kitchen"
+   categories: Thai
+   website: http://bangkokkitchenmaumee.com/
+   address: 582 W Dussel Dr, Maumee, OH 43537
+   price: 1
+   vegan: true
+   glutenFree: false
+   star: true
+ - name: "Social Gastropub"
+   categories: Gastropub
+   website: http://www.socialgastropub.com/
+   address: 25818 N Dixie Hwy, Perrysburg, OH 43551
+   price: 2
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "Element 112"
+   categories: Fine Dining
+   website: http://www.element112restaurant.com/
+   address: 5735 Main St, Sylvania, OH 43560
+   price: 4
+   vegan: true
+   glutenFree: true
+   star: false
+ - name: "Domo Sushi"
+   categories: Japanese, Sushi
+   website: http://www.domotoledo.com/
+   address: 6725 Central Ave, Toledo, OH 43617
+   price: 3
+   vegan: true
+   glutenFree: true
+   star: false
+ - name: "Koreana Asian Grill"
+   categories: Korean, Sushi
+   website: http://www.koreanatoledo.com/
+   address: 1423 Bernath Pkwy, Toledo, OH 43615
+   price: 3
+   vegan: true
+   glutenFree: false
+   star: true
+ - name: "Ye Olde Durty Bird"
+   categories: American Traditional
+   website: http://yeoldedurtybird.com/
+   address: 2 S St Clair St, Toledo, OH 43604
+   price: 1
+   vegan: true
+   glutenFree: false
+   star: true
+ - name: "Poco Piatti"
+   categories: Mediterranean
+   website: http://www.pocopiatti.com/
+   address: 3155 Chappel Dr, Perrysburg, OH 43551
+   price: 2
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "Swig"
+   categories: Gastropub, Late-Night
+   website: http://swigrestaurant.com/
+   address: 219 Louisiana Ave, Perrysburg, OH 43551
+   price: 1
+   vegan: true
+   glutenFree: false
+   star: true
+ - name: "5th Street Pub"
+   categories: Italian Gastropub
+   website: https://www.5thstreetpub.com/
+   address: 105 W 5th St, Perrysburg, OH 43551
+   price: 2
+   vegan: true
+   glutenFree: false
+   star: true
+ - name: "Stella's Restaurant & Bar"
+   categories: Fine Dining
+   website: http://www.stellasrestaurantandbar.com/
+   address: 104 Louisiana Ave, Perrysburg, OH 43551
+   price: 3
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "Barr's Public House"
+   categories: Gastropub, Late-Night
+   website: http://www.barrspublichouse.com/
+   address: 3355 Briarfield Blvd, Maumee, OH 43537
+   price: 3
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "Bar 145"
+   categories: Burgers, Late-Night
+   website: http://www.bar145toledo.com/
+   address: 5305 Monroe St, Toledo, OH 43623
+   price: 2
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "Te'kela Mexican Cocina"
+   categories: Mexican
+   website: http://www.tekelacocina.com/
+   address: 25481 Dixie Hwy, Perrysburg, OH 43551
+   price: 2
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "Kotobuki"
+   categories: Japanese, Sushi
+   website: http://www.kotobukitoledo.com/
+   address: 5577 Monroe St, Sylvania, OH 43560
+   price: 2
+   vegan: true
+   glutenFree: true
+   star: false
+ - name: "Cocina De Carlos"
+   categories: Mexican
+   website: http://www.cocinadecarlos.com/
+   address: 27072 Carronade Dr, Perrysburg, OH 43551
+   price: 2
+   vegan: true
+   glutenFree: true
+   star: false

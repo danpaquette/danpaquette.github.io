@@ -8,6 +8,7 @@ $main-header-height: 10rem;
   height: $main-header-height;
   position: relative;
   z-index: 1;
+  padding: 0 1.5rem;
 }
 
 @media #{map-get($media-queries, lg)} {
@@ -22,7 +23,7 @@ $main-header-height: 10rem;
   display: flex;
   align-items: center;
   width: 6rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   position: relative;
 }
 
@@ -47,15 +48,21 @@ $main-header-height: 10rem;
   margin: 0;
   padding: 0;
   list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main-navigation-list > li {
   margin-left: 2rem;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
 }
 
 @media #{map-get($media-queries, lg)} {
   .main-navigation-list > li {
     margin-left: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 

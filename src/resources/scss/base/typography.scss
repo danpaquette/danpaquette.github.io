@@ -27,3 +27,7 @@ hr {
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
+
+p:last-child {
+  margin-bottom: 0;
+}
