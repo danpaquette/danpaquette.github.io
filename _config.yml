@@ -1,5 +1,0 @@
-permalink: pretty
-baseurl: https://danpaquette.net
-collections:
-  work:
-    output: true
