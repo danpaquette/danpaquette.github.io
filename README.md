@@ -54,4 +54,4 @@ Run `grunt` to run the default Grunt task and build the production `/dist` direc
 [Code Guide](http://codeguide.co/#css)
 
 - When feasible, default color palettes should comply with [WCAG color contrast guidelines](http://www.w3.org/TR/WCAG20/#visual-audio-contrast).
-- Always include alternative styles for `:focus` styles (via e.g. `outline: none;`) See [this A11Y Project post](http://a11yproject.com/posts/never-remove-css-outlines/) for more details.
+- Always include alternative styles for `:focus` styles (via e.g. `outline: none;`) See [this A11Y Project post](http://a11yproject.com/posts/never-remove-css-outlines/) for more details.Test
