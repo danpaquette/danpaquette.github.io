@@ -156,7 +156,7 @@
    address: 5577 Monroe St, Sylvania, OH 43560
    price: 2
    vegan: true
-   glutenFree: true
+   glutenFree: false
    star: false
  - name: "Cocina De Carlos"
    categories: Mexican
@@ -164,5 +164,173 @@
    address: 27072 Carronade Dr, Perrysburg, OH 43551
    price: 2
    vegan: true
+   glutenFree: false
+   star: true
+ - name: "Plat8"
+   categories: American Traditional
+   website: http://plat8toledo.com/
+   address: 4330 Central Ave, Toledo, OH 43615
+   price: 3
+   vegan: true
+   glutenFree: false
+   star: true
+ - name: "Carlos' Poco Loco"
+   categories: Mexican
+   website: http://carlospocoloco.com/
+   address: 1809 Adams St, Toledo, OH 43604
+   price: 2
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "Maumee Bay Brewing Co."
+   categories: Brewery, American
+   website: http://www.mbaybrew.com/
+   address: 27 Broadway St, Toledo, OH 43604
+   price: 2
+   vegan: true
+   glutenFree: false
+   star: true
+ - name: "Tea Tree Asian Bistro"
+   categories: Half-Off Sushi, Tues, Thur
+   website: http://teatreeasianbistro.com/
+   address: 4100 Chappel Dr, Perrysburg, OH 43551
+   price: 2
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "Ciao Ristorante"
+   categories: Italian
+   website: http://ciaorestaurant.com/
+   address: 6064 Monroe St, Sylvania, OH 43560
+   price: 3
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "Nagoya"
+   categories: Japanese, Sushi
+   website: http://www.nagoyaohio.com/
+   address: 6190 Levis Commons Blvd, Perrysburg, OH 43551
+   price: 3
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "Original Sub Shop"
+   categories: Deli Sandwiches
+   website: http://www.originalsub.com/
+   address: 402 Broadway St, Toledo, OH 43604
+   price: 1
+   vegan: true
+   glutenFree: false
+   star: true
+ - name: "Kira Japanese Steakhouse"
+   categories: Japanese, Sushi
+   website: https://www.kirasteakhouse.com/
+   address: 3324 Secor Rd, Toledo, OH 43606
+   price: 2
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "NINE at Hensville"
+   categories: Steakhouse
+   website: http://hensvilletoledo.com/nine
+   address: 9 N St Clair St, Toledo, OH 43604
+   price: 4
+   vegan: false
+   glutenFree: false
+   star: false
+ - name: "Mancy's Steakhouse"
+   categories: Steakhouse
+   website: https://www.mancys.com/#steakhouse
+   address: 953 Phillips Ave, Toledo, OH 43612
+   price: 4
+   vegan: false
+   glutenFree: false
+   star: true
+ - name: "Mancy's Italian Grill"
+   categories: Italian
+   website: https://www.mancys.com/#italian
+   address: 5453 Monroe St, Toledo, OH 43623
+   price: 4
+   vegan: true
+   glutenFree: false
+   star: false
+ - name: "Star of India"
+   categories: Indian
+   website: https://www.facebook.com/Star-of-India-207109089337185/
+   address: 415 S Reynolds Rd, Toledo, OH 43615
+   price: 2
+   vegan: true
+   glutenFree: true
+   star: true
+ - name: "Rice Blvd."
+   categories: Japanese, Sushi
+   website: http://riceblvd.com/main/main.php
+   address: 1440 Secor Rd, Toledo, OH 43606
+   price: 1
+   vegan: true
    glutenFree: true
    star: false
+ - name: "Black Cloister Brewing Co."
+   categories: Brewery
+   website: http://www.blackcloister.com/
+   address: 619 Monroe St, Toledo, OH 43604
+   price: 2
+   vegan: false
+   glutenFree: false
+   star: true
+ - name: "QQ Kitchen"
+   categories: Chinese
+   website: http://www.qqkitchen.com/
+   address: 3324 Secor Rd. \#4, Toledo, OH 43606
+   price: 1
+   vegan: false
+   glutenFree: false
+   star: true
+ - name: "Packo's at the Park"
+   categories: Hungarian, American
+   website: http://www.tonypacko.com/
+   address: 7 S Superior St, Toledo, OH 43604
+   price: 1
+   vegan: false
+   glutenFree: false
+   star: true
+ - name: "Grumpy's"
+   categories: American Traditional
+   website: http://grumpys.net/
+   address: 34 S Huron St, Toledo, OH 43604
+   price: 2
+   vegan: true
+   glutenFree: true
+   star: true
+ - name: "Kengo Sushi & Yakitori"
+   categories: Japanese, Sushi
+   website: http://www.kengotoledo.com/
+   address: 38 S St Clair St, Toledo, OH 43604
+   price: 4
+   vegan: false
+   glutenFree: true
+   star: true
+ - name: "Brim House"
+   categories: American Traditional
+   website: https://www.brimhousetoledo.com/
+   address: 444 N Summit St, Toledo, OH 43604
+   price: 3
+   vegan: false
+   glutenFree: false
+   star: false
+ - name: "The Heights"
+   categories: Rooftop Bar
+   website: https://www.theheightstoledo.com/
+   address: 444 N Summit St, Toledo, OH 43604
+   price: 3
+   vegan: false
+   glutenFree: false
+   star: true
+ - name: "Fowl and Fodder"
+   categories: American Contemporary
+   website: https://www.fowlandfodder.com/
+   address: 7408 Central Ave, Toledo, OH 43617
+   price: 2
+   vegan: true
+   glutenFree: true
+   star: true
