@@ -26,7 +26,7 @@ Public portfolio for Dan Paquette.
 
 ## Building for Local Testing and Production
 
-####Building for Local Testing
+#### Building for Local Testing
 
 Running `grunt local-test` will output a completed, Jekyll-compiled website in the `/.test` directory.
 
@@ -34,7 +34,7 @@ Running `start-connect` will open a Connect server on at `http://localhost:8080/
 
 Running `build-css` or `build-js` will build the CSS and Javascript respectively.
 
-####Building for Production
+#### Building for Production
 
 Run `grunt` to run the default Grunt task and build the production `/dist` directory. Production, in this case, is a Jekyll-ready configuration for deployment on Github pages. Github will then manage the final conversion into a fully navigable website.
 
