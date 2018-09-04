@@ -1,0 +1,63 @@
+---
+title: Read
+description: Musings about new things I learn or interesting stuff I find about web &amp; digital design, development, best practices, etc.
+layout: default
+---
+
+<section class="section-primary">
+  <div class="container-md">
+    <ul class="read-list">
+      {% for post in paginator.posts %}
+      <li class="read-list-item">
+        <article class="read-article">
+          <a class="read-article-cover" href="{{ post.url }}">
+            <img class="read-article-cover-image" src="{{ post.cover }}" alt="{{ post.title }}" />
+          </a>
+          <a class="read-article-title" href="{{ post.url }}">
+            <h2>{{ post.title }}</h2>
+          </a>
+          <div class="read-article-description">
+            {{ post.excerpt }}
+          </div>
+          <a class="button-alt read-article-button" href="{{ post.url }}">
+            Read More
+          </a>
+        </article>
+      </li>
+      {% endfor %}
+    </ul>
+    {% if paginator.total_pages > 1 %}
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}">
+            &laquo; Prev
+          </a>
+        {% else %}
+          <span>&laquo; Prev</span>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+            <span>{{ page }}</span>
+          {% elsif page == 1 %}
+            <a href="{{ paginator.previous_page_path }}">
+              {{ page }}
+            </a>
+          {% else %}
+            <a href="{{ site.paginate_path | replace: ':num', page }}">
+              {{ page }}
+            </a>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}">
+            Next &raquo;
+          </a>
+        {% else %}
+          <span>Next &raquo;</span>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>

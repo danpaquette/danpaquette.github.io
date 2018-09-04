@@ -22,11 +22,13 @@ Public portfolio for Dan Paquette.
 
 - **Install Jekyll**: Run `gem install jekyll`, or [follow the instructions here](http://jekyllrb.com/docs/quickstart/) to install Jekyll
 
+- **Install Jekyll Paginate**: Run `gem install jekyll-paginate`, or [follow the instructions here](https://rubygems.org/gems/jekyll-paginate) to install Jekyll Paginate
+
 **Warning for Windows Users**: You may have to restart after each installation step so that the PATH variable is properly updated.
 
 ## Building for Local Testing and Production
 
-####Building for Local Testing
+#### Building for Local Testing
 
 Running `grunt local-test` will output a completed, Jekyll-compiled website in the `/.test` directory.
 
@@ -34,7 +36,7 @@ Running `start-connect` will open a Connect server on at `http://localhost:8080/
 
 Running `build-css` or `build-js` will build the CSS and Javascript respectively.
 
-####Building for Production
+#### Building for Production
 
 Run `grunt` to run the default Grunt task and build the production `/dist` directory. Production, in this case, is a Jekyll-ready configuration for deployment on Github pages. Github will then manage the final conversion into a fully navigable website.
 

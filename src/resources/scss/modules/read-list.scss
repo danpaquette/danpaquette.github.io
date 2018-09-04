@@ -1,0 +1,37 @@
+.read-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.read-list-item {
+  margin-bottom: 3rem;
+}
+
+.read-article {
+  .read-article-cover {
+
+  }
+
+  .read-article-cover-image {
+    height: 24rem;
+    object-fit: cover;
+    object-position: center center;
+    margin-bottom: 2.5rem;
+  }
+
+  a.read-article-title {
+    &:hover * {
+      color: $orange;
+    }
+  }
+
+  .read-article-description {
+
+  }
+
+  .read-article-button {
+    margin-top: 1rem;
+    padding-left: 0;
+  }
+}

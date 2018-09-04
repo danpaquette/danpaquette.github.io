@@ -1,0 +1,13 @@
+{% include header.html %}
+
+<section class="section-primary">
+  <div class="container-md">
+    <article class="read-article">
+      <img class="read-article-cover-image" src="{{ page.cover }}" alt="{{ page.title }}" />
+      <h1>{{ page.title }}</h1>
+      {{content}}
+    </article>
+  </div>
+</section>
+
+{% include footer.html %}

@@ -230,14 +230,6 @@
    vegan: true
    glutenFree: false
    star: false
- - name: "NINE at Hensville"
-   categories: Steakhouse
-   website: http://hensvilletoledo.com/nine
-   address: 9 N St Clair St, Toledo, OH 43604
-   price: 4
-   vegan: false
-   glutenFree: false
-   star: false
  - name: "Mancy's Steakhouse"
    categories: Steakhouse
    website: https://www.mancys.com/#steakhouse
