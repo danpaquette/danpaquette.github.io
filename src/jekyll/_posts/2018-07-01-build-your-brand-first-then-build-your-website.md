@@ -6,52 +6,51 @@ permalink: read/:title/
 cover: /resources/img/posts/build-your-brand-first.jpg
 ---
 
-Many businesses recognize their website as the single most important marketing tool. They're not wrong. Without a
-website, they're unable to participate in the broad range of data-driven, ROI proven marketing strategies that
-successful companies undertake.
+Many businesses recognize their website as their single most important marketing tool. Well, they're not wrong. Without a
+website, they don't get to participate in the broad range of data-driven, ROI proven digital marketing strategies that
+their more successful competitors undertake.
 
 <!--more-->
 
-While businesses understand to hold off on that next piece of collateral&mdash;that flashy brochure, new business card, or
-coffee mug&mdash;, they will without fail jump the gun on building their website before they've even decided on a color
-palette, let alone the entire brand.
+While marketing managers understand to hold off on that next piece of collateral&mdash;that flashy brochure, new business card, or
+coffee mugs&mdash;, they will without fail jump the gun on building their website before they've even decided on a color
+palette, let alone the entire brand, for their company.
 
-Because websites utilize so much of what's in a company brand, marketing managers feel they can sidestep the process, save some
-money, and iron out the details later.
+Because websites utilize so much of what's in a brand, they feel they can sidestep the process, save some
+money, knock it all out at once, and figure out the details later.
 
-I understand the urgency. Without a website, you're marketing department is stuck. That urge to save time & money and increase
-speed-to-market can be very seductive. Here's the facts: **brute-forcing a website without a brand will not do that for you, and
-you need to do your brand work first.**
+I understand the urgency. Without a website, any marketing department would stuck. That urge to save time & money and increase
+speed-to-market can be very seductive. But here's the bottom line: **brute-forcing a website without a brand will not do that 
+for you, and you need to do your brand work first.**
 
-I have seen countless clients start the process with half-baked brand work, or with the assumption that myself, my designers,
+I have seen clients start bloated web projects with half-baked brand work, or with the assumption that myself, my designers,
 or worse, my frontend developers are going to fill in the holes within the scope of the website. It won't happen, and I
 guarantee you'll be disappointed with the outcome.
 
-Now, I've gotten pretty good at identifying these clients early, and there's a few hallmarks:
+I've gotten pretty good at identifying these types clients early, and there's a few hallmarks:
 
 1. The logo dates the company
 2. They're in the process of redesigning sales collateral
 3. What collateral they do have is a mishmash of stock assets
 4. They have high goals and a tight budget for their website
-5. They need it done yesterday
+5. They need it all done yesterday
 
-And more often than not, this is all laid out by one, very overworked marketing manager with no time, let alone patience,
-for the pageantry of a brand workshop. Compared to the tangible ROI of a website, it's always "we'll catch it in post"
+And more often than not, this is all resting on the shoulders of one very overworked marketing manager with no time, let alone 
+the patience, for the pageantry of a brand workshop. Compared to the tangible ROI of a website, it's always "we'll catch it in post"
 when it comes to the brand.
 
 ### Take the Pain Out of Branding
 
 Agency's can be sharks; there's no doubt about it. Nothing screams billable hours more than a bloated rebranding budget. I
-understand the urge to save dollars on intangible work like your brand. I'll be putting out an article about how you can
-get the most out of an agency branding session. In the meantime, here's what I need to get started on your website.
+understand the urge to save dollars on work you can't directly tie to a KPI. I'll be putting out an article about how you can
+get the most out of agency branding work. In the meantime, what follows is what I need to get started on your website.
 
 ### Brand Elements You Need Before Building a Website
 
 ##### Logos
 
 It sounds simple, but clients often start web projects with old, half-baked logos, often pieces of clipart or terribly
-weathered jpegs, that wouldn't stand in a trademark dispute, let alone on their flagship website. Your logo sets the tone
-for a great deal of your brand; including the types of photography, ornamentation, typography, and visual elements that
+weathered jpegs, that wouldn't stand in a trademark dispute, let alone serve as the capstone of their flagship website. Your logo sets the tone for a great deal of your brand; including the types of photography, ornamentation, typography, and visual elements that
 are used both on and off the web.
 
 
