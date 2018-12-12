@@ -41,7 +41,7 @@ when it comes to the brand.
 
 ### Take the Pain Out of Branding
 
-Agency's can be sharks; there's no doubt about it. Nothing screams billable hours more than a bloated rebranding budget. I
+Agencies can be sharks; there's no doubt about it. Nothing screams billable hours more than a bloated rebranding budget. I
 understand the urge to save dollars on work you can't directly tie to a KPI. I'll be putting out an article about how you can
 get the most out of agency branding work. In the meantime, what follows is what I need to get started on your website.
 
