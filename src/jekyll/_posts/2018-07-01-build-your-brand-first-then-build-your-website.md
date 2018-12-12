@@ -12,19 +12,19 @@ successful companies undertake.
 
 <!--more-->
 
-While businesses understand to hold off on that next piece of collateral&mdash;that flashy brochure, new business card, or
+While businesses understand to hold off on that next piece of collateral&mdash;that flashy sellsheet, new business card, or
 coffee mug&mdash;, they will without fail jump the gun on building their website before they've even decided on a color
-palette, let alone the entire brand.
+palette, let alone the brand.
 
 Because websites utilize so much of what's in a company brand, marketing managers feel they can sidestep the process, save some
-money, and iron out the details later.
+money, and iron out the details later with creative work that was done on the website.
 
 I understand the urgency. Without a website, you're marketing department is stuck. That urge to save time & money and increase
 speed-to-market can be very seductive. Here's the facts: **brute-forcing a website without a brand will not do that for you, and
 you need to do your brand work first.**
 
-I have seen countless clients start the process with half-baked brand work, or with the assumption that myself, my designers,
-or worse, my frontend developers are going to fill in the holes within the scope of the website. It won't happen, and I
+I have seen countless clients start the process with half-baked brand work, or with the assumption that myself, the designers,
+or worse, the frontend developers are going to fill in the holes within the scope of the website. It won't happen, and I
 guarantee you'll be disappointed with the outcome.
 
 Now, I've gotten pretty good at identifying these clients early, and there's a few hallmarks:
@@ -41,8 +41,8 @@ when it comes to the brand.
 
 ### Take the Pain Out of Branding
 
-Agency's can be sharks; there's no doubt about it. Nothing screams billable hours more than a bloated rebranding budget. I
-understand the urge to save dollars on intangible work like your brand. I'll be putting out an article about how you can
+Agencies can be sharks; there's no doubt about it. Nothing screams billable hours more than a bloated rebranding budget. I
+understand the urge to save dollars on non-monetized work like your brand. I'll be putting out an article about how you can
 get the most out of an agency branding session. In the meantime, here's what I need to get started on your website.
 
 ### Brand Elements You Need Before Building a Website
@@ -63,7 +63,7 @@ decisions, which is a lot, having to make those decisions on the fly while build
 
 ##### Messaging
 
-This is your company's vision, it's personality. This is the work that often gets skipped, and I understand. It's
+This is your company's vision&mdash;its personality. This is the work that often gets skipped, and I understand. It's
 ephemeral, intangible, and more often, it's just a guess. You, personally and professionally, have to determine how
 much you're willing take risks with messaging. Once we get to the website, it's too late. I can make some
 assumptions, but it's your sales people, your employees, and your partners that should inform your company's voice. You
@@ -99,3 +99,7 @@ often and often too late, it's discovered that we need additional budget to have
 Have these brand elements executed well before you start a web project, and I guarantee the end result with not only be
 more satisfying to you personally, but more performant in your goals. Businesses that undertake these exercises resolve
 much of the guess work and extra budgetary liberties we have to take resulting in cheaper, often quicker launch.
+
+Moreover, it's less work you'll have to do down the road. Make competent, measured decisions about your brand over the
+snap judgements we'll need to make in order to design your website. You'll spend less time fixing all the liberties a
+web designer took when you have people who are actually trained to build brands.
