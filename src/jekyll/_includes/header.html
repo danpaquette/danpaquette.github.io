@@ -39,7 +39,7 @@
     <meta property="og:title" content="{{site.data.settings.title}} &bull; {{page.title}}" />
     <meta property="og:site_name" content="{{site.data.settings.title}}" />
     <meta property="og:description" content="{{page.description}}" />
-    <meta property="og:image" content="/resources/img/meta/open-graph/og-600x600.png" />
+    <meta property="og:image" content="{% if page.cover %}{{ page.cover }}{% else %}/resources/img/meta/open-graph/og-600x600.png{% endif %}" />
     <meta property="og:url" content="{{site.baseurl}}{{page.url}}" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />

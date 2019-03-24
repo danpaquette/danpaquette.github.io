@@ -4,6 +4,6 @@ plugins: [jekyll-paginate]
 collections:
   work:
     output: true
-paginate: 2
+paginate: 6
 paginate_path: "/read/page-:num/"
 excerpt_separator: <!--more-->

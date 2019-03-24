@@ -1,6 +1,6 @@
 ---
-title: Build Your Brand First, Then Build Your Website
-description: Here I'll document new things that I learn or interesting things I find concerning web &amp; digital design, development, best practices, etc.
+title: "Build Your Brand First, Then Build Your Website"
+description: "Many businesses recognize their website as their single most important marketing tool. Well, they're not wrong. Without a website, they don't get to participate in the broad range of data-driven, ROI proven digital marketing strategies that their more successful competitors undertake."
 layout: post
 permalink: read/:title/
 cover: /resources/img/posts/build-your-brand-first.jpg
