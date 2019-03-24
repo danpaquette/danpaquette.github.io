@@ -20,13 +20,13 @@ But oh no! The longer logos look fine, but the PC Magazine logo is gigantic, and
 
 Oh jeez! That looks a little better I guess, but now The Wall Street Journal is gigantic, and you can hardly see the PC Magazine logo! Certainly, there must be a way to line up a list of icons or logos so they are somewhat proportional to one another.
 
-The Proportional Image Normalization Formula
+## The Proportional Image Normalization Formula
 
-I haven't seen anyone write about this issue specifically, so I'm naming it the "Proportional Image Normalization Formula," which is a grandiose name for what is basically grade school math—and if someone else already named it, please let me know.
+I haven't seen anyone write about this issue specifically, so I'm naming it the "Proportional Image Normalization Formula," which is a grandiose name for what is basically grade school math—and if it already has a name, please let me know.
 
 Anyway, here's what it looks like:
 
-(imageWidth / imageHeight) ** scaleFactor * widthBase
+**(imageWidth / imageHeight) ** scaleFactor * widthBase**
 
 And here's what it looks like in Javascript:
 
@@ -54,11 +54,11 @@ And here's what it looks like in Javascript:
 }());
 ```
 
-And here's the result:
+**And here's the result:**
 
 ![Logos resized proportionally.](/resources/img/posts/logos-proportional.png)
 
-View in Codepen: <https://codepen.io/danpaquette/pen/jXpbQK>
+**View in Codepen:** <https://codepen.io/danpaquette/pen/jXpbQK>
 
 Now our PC Magazine and Wall Street Journal logos are perfectly legible and proportional to one another. Something interesting about the formula is that it allows you to bounce between the same-width and same-height methods I first tried. If the scale factor is 0, all of the logos are the same width. If the scale factor is 1, all of the logos are the same height. I find somewhere around the middle, 0.525, to be the most attractive balance.
 
