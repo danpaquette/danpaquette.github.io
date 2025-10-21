@@ -1,0 +1,153 @@
+<form id="leadForm">
+  <input type="text" />
+</form>
+
+<script>
+/**
+ * UTM & Click-ID history → cookie → append to forms as JSON array
+ * - Cookie holds a JSON array of objects (no wrapper key).
+ * - Each object: { timestamp, path, utm_id, utm_source, utm_medium, utm_campaign, utm_content, utm_term, gclid, fbclid }
+ * - Dedupe uses a signature of all UTM fields + click IDs.
+ */
+
+/* ===== CONFIG ===== */
+const COOKIE_NAME = "utm_history";
+const COOKIE_DAYS = 180; // cookie lifetime
+const MAX_ENTRIES = 25;  // cap to avoid cookie overflows
+const FORM_IDS = ["leadForm", "contactForm"]; // <-- set your form IDs here
+const HIDDEN_FIELD_NAME = "utm_history_json"; // CRM field name
+/* ================== */
+
+(function () {
+  const PARAM_KEYS = [
+    "utm_id",
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_content",
+    "utm_term",
+    "gclid",
+    "fbclid"
+  ];
+
+  // --- Cookie helpers ---
+  function setCookie(name, value, days) {
+    const expires = new Date(Date.now() + days * 864e5).toUTCString();
+    // Path=/ so all routes can read; Secure/SameSite=Lax for safety
+    document.cookie = name + "=" + encodeURIComponent(value) +
+      "; expires=" + expires + "; path=/; SameSite=Lax";
+  }
+
+  function getCookie(name) {
+    return document.cookie
+      .split("; ")
+      .find(row => row.startsWith(name + "="))
+      ?.split("=")[1];
+  }
+
+  function safeParse(json, fallback) {
+    try { return JSON.parse(json); } catch { return fallback; }
+  }
+
+  // --- URL param extraction ---
+  function readParams() {
+    const p = new URLSearchParams(window.location.search);
+    const obj = {};
+    let found = false;
+    for (const k of PARAM_KEYS) {
+      const v = p.get(k);
+      obj[k] = v !== null ? v : null;
+      if (v !== null && v !== "") found = true;
+    }
+    return { obj, found };
+  }
+
+  // Signature for dedupe: join all identifying fields (lowercased, trimmed)
+  function signature(entry) {
+    const vals = [
+      entry.utm_id,
+      entry.utm_source,
+      entry.utm_medium,
+      entry.utm_campaign,
+      entry.utm_content,
+      entry.utm_term,
+      entry.gclid,
+      entry.fbclid
+    ].map(v => (v || "").toString().trim().toLowerCase());
+    return vals.join("|");
+  }
+
+  // Load existing history (JSON array) from cookie
+  function loadHistory() {
+    const raw = getCookie(COOKIE_NAME);
+    if (!raw) return [];
+    return safeParse(decodeURIComponent(raw), []);
+  }
+
+  // Save array back to cookie (truncate if needed)
+  function saveHistory(arr) {
+    // Keep most recent first; cap max size
+    const trimmed = arr.slice(0, MAX_ENTRIES);
+    const json = JSON.stringify(trimmed);
+    setCookie(COOKIE_NAME, json, COOKIE_DAYS);
+    return trimmed;
+  }
+
+  // Append hidden field to specified forms
+  function attachToForms(jsonArrayString) {
+    FORM_IDS.forEach(id => {
+      const form = document.getElementById(id);
+      if (!form) return;
+      // Remove any prior field with same name to avoid duplicates
+      const existing = form.querySelector('input[name="'+HIDDEN_FIELD_NAME+'"]');
+      if (existing) existing.remove();
+      const input = document.createElement("input");
+      input.type = "hidden";
+      input.name = HIDDEN_FIELD_NAME;
+      input.value = jsonArrayString;
+      form.appendChild(input);
+    });
+  }
+
+  // Main flow
+  const { obj: params, found } = readParams();
+  let history = loadHistory();
+
+  if (found) {
+    const newEntry = {
+      timestamp: new Date().toISOString(),
+      path: window.location.pathname || "/",
+      utm_id: params.utm_id,
+      utm_source: params.utm_source,
+      utm_medium: params.utm_medium,
+      utm_campaign: params.utm_campaign,
+      utm_content: params.utm_content,
+      utm_term: params.utm_term,
+      gclid: params.gclid,
+      fbclid: params.fbclid
+    };
+
+    const newSig = signature(newEntry);
+
+    // Build a Set of existing signatures for O(1) dedupe
+    const sigs = new Set(history.map(e => signature(e)));
+
+    if (!sigs.has(newSig)) {
+      // Most recent first
+      history.unshift(newEntry);
+    } else {
+      // Optional: move existing matching entry to the front to reflect recency
+      history = [
+        newEntry,
+        ...history.filter(e => signature(e) !== newSig)
+      ];
+    }
+
+    history = saveHistory(history);
+  }
+
+  // Always append the JSON array to forms (whether or not new UTMs were found)
+  attachToForms(JSON.stringify(history));
+})();
+
+</script>
